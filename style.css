@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Barra de navegacion*/
+.nav {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    height: 60px;
+    display: flex; /* Añade display: flex para el contenedor .nav */
+    /*justify-content: space-between;  Añade esto para separar el título y los enlaces */
+    align-items: center;/* Centra verticalmente los elementos */
+    /*position: inherit; */
+}
+
+
+.nav-links {
+    display: flex;
+    list-style-type: none; /* Quita los puntos de lista */
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    padding-left: 50px;
+}
+
+.nav a {
+    text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+    color: white;
+    margin: 0px 30px 0px 0px;
+}
+
+.nav-links .active{
+    /*color: aqua;*/
+    font-weight: bold;
+}
+
+.nav-title {
+    margin-left: 150px;
+
+}
+
+.btn {
+    height: 35px;
+    width: 110px; 
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    box-shadow: 5px 5px #000000;
+    margin-left: 370px; 
+    font-weight: bold;
+}
+
+/* Tarjeta de usuario*/
+.flex-container {
+    width: 600px;
+    margin: 30px 150px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.user-card {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #17a2b8;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 10px 0px;
+}
+
+.avatar-m {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 190px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icon-s {
+    height: 20px;
+    margin-right: 10px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+
+/* Cuadro 1 lado derecho*/
+.container {
+    width: 300px;
+    height: 200px;
+    margin: -472px 850px 0;
+    flex-direction: column; 
+}
+
+.card {
+    width: 90%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #2c2f30;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+    color: white;
+}
+
+.header h1{
+    font-size: 110%;
+    text-align: center;
+    color: white;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(197, 196, 196); /* Color de fondo gris (plomo) */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: black; /* Color del número en negro */
+    font-size: 20px; /* Tamaño del número */
+    margin-right: 10px;
+} 
+
+.body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+h3 {
+    margin: 5px 0; /* Añadimos margen vertical para separar los elementos <h3> */
+    display: inline-flex; /* Usamos display: inline-flex para que el ícono y el texto estén en la misma línea horizontal */
+    align-items: center; /* Centramos verticalmente los elementos <h3> */
+}
+
+h3 button.roundIconBtn.solidBtn {
+    margin-left: 40px; /* Espacio entre los botones */
+}
+
+h3 button.roundIconBtn.solidBtn:last-child {
+    margin-left: 0; /* Elimina el margen izquierdo del último botón */
+}
+
+.icon-c {
+    height: 30px;
+    margin-right: 10px; /* Añadimos margen derecho para separar el ícono del texto */
+    display: inline-flex; /* Usamos display: inline-flex para que el ícono y el texto estén en la misma línea horizontal */
+    align-items: center; 
+}
+
+.roundIconBtn {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+}
+
+.roundIconBtn>img {
+    height: 32px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 0.5px;
+}
+
+.solidBtn {
+    border: none;
+    background-color: white;
+    margin-left: 30px; /* Reduce el margen para un mejor ajuste */
+    text-align: center;
+    display: flex; /* Usa display: flex para alinear verticalmente elementos internos */
+    flex-direction: column; /* Alinea elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.solidBtn:hover {
+    background-color: darkgray;
+    box-shadow: 0px 0px 5px 2px white;
+}
+
+
+/* Cuadro 2 lado derecho*/
+.container2 {
+    width: 300px;
+    height: 300px; /* Aumenta la altura para agregar más espacio inferior */
+    margin: 30px 850px 0;
+    flex-direction: column;
+}
+
+.card2 {
+    width: 90%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.header2 {
+    background-color: #2c2f30;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+    color: white;
+}
+
+.header2 h1{
+    font-size: 110%;
+    text-align: center;
+    color: white;
+}
+
+.circle2 {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(197, 196, 196); /* Color de fondo gris (plomo) */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    color: black; /* Color del número en negro */
+    font-size: 20px; /* Tamaño del número */
+    margin-right: 10px;
+}
+
+.body2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid #999; /* Agregar un borde inferior para crear la línea horizontal */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.a p {
+    margin: 10px 15px;
+    font-weight: bold;
+}
+
+
+/* Cuadro 3 abajo de la tarjeta de usuario*/
+.container3 {
+    width: 600px;
+    height: 300px; /* Aumenta la altura para agregar más espacio inferior */
+    margin: 0px 150px;
+}
+
+.card3 {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-top: -40px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.header3 {
+    background-color: #2c2f30;
+    height: 30px;
+    color: white;
+    padding: 10px 19px;
+}
+
+.header3 h1{
+    font-size: 110%;
+}
+
+.body3 {
+    padding: 10px 19px;
+}
+
+.body3 h3 {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.card3 .body3 h5 {
+    color: gray; /* Cambia el color a gris */
+    margin: 10px 0; /* Añade margen vertical */
+}
+
+.card3 .body3 h5.letra {
+    color: black; /* Cambia el color a negro */
+    margin: 10px 0; /* Añade margen vertical */
+}
+
+
+
